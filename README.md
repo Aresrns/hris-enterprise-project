@@ -54,27 +54,27 @@ About 40 screens came out of that, each with a flow diagram split into three lan
 
 HR dashboard. The first thing HR sees in the morning: attendance, approvals waiting, and the work that's stuck.
 
-![HR dashboard](01-dashboard.png)
+![HR dashboard](docs/images/01-dashboard.png)
 
 Payroll review. Payroll can't go to Finance while critical anomalies are unchecked, and the rule pack in force is shown next to the numbers.
 
-![Payroll review with anomaly checks](02-payroll-review.png)
+![Payroll review with anomaly checks](docs/images/02-payroll-review.png)
 
 Payslip on the phone. PIN or fingerprint before any amount shows, and the edge cases are designed up front instead of left for QA to find.
 
-![Payslip on mobile](03-payslip-mobile.png)
+![Payslip on mobile](docs/images/03-payslip-mobile.png)
 
 Clock-in for store staff. Selfie plus geofence, works offline, blocks fake GPS.
 
-![Clock-in on mobile](04-clock-in-mobile.png)
+![Clock-in on mobile](docs/images/04-clock-in-mobile.png)
 
 Rule packs. Versioned rules with effective dates, a sandbox run, and Head of HR approval.
 
-![Rule packs](05-rule-packs.png)
+![Rule packs](docs/images/05-rule-packs.png)
 
 And the flow behind the payslip story. Each step links to the acceptance criteria QA will check.
 
-![Payslip flow](06-flow-payslip.png)
+![Payslip flow](docs/images/06-flow-payslip.png)
 
 ## Decisions worth explaining
 
