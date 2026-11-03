@@ -50,6 +50,32 @@ The whole build was squeezed into a one-month roadmap, so I split the design wor
 
 About 40 screens came out of that, each with a flow diagram split into three lanes (user and screen, system and API, QA checks) so PO, frontend, backend and QA could read the same page.
 
+## A few of the screens
+
+HR dashboard. The first thing HR sees in the morning: attendance, approvals waiting, and the work that's stuck.
+
+![HR dashboard](01-dashboard.png)
+
+Payroll review. Payroll can't go to Finance while critical anomalies are unchecked, and the rule pack in force is shown next to the numbers.
+
+![Payroll review with anomaly checks](02-payroll-review.png)
+
+Payslip on the phone. PIN or fingerprint before any amount shows, and the edge cases are designed up front instead of left for QA to find.
+
+![Payslip on mobile](03-payslip-mobile.png)
+
+Clock-in for store staff. Selfie plus geofence, works offline, blocks fake GPS.
+
+![Clock-in on mobile](04-clock-in-mobile.png)
+
+Rule packs. Versioned rules with effective dates, a sandbox run, and Head of HR approval.
+
+![Rule packs](05-rule-packs.png)
+
+And the flow behind the payslip story. Each step links to the acceptance criteria QA will check.
+
+![Payslip flow](06-flow-payslip.png)
+
 ## Decisions worth explaining
 
 **Rules live in data, not code.** BPJS rates, PPh 21 TER tables, overtime multipliers and PKWT limits change. I asked for them to be stored as versioned "rule packs" with an effective date. Payroll for February uses February's rules even if it's re-run in March. A new pack needs Head of HR approval and can be tested in a sandbox first.
