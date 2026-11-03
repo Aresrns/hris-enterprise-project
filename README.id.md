@@ -50,6 +50,34 @@ Seluruh pembangunan dipadatkan ke roadmap satu bulan, jadi pekerjaan desain saya
 
 Hasilnya sekitar 40 layar, masing-masing dengan diagram alur tiga jalur (pengguna dan layar, sistem dan API, pengecekan QA) supaya PO, frontend, backend, dan QA membaca halaman yang sama.
 
+## Beberapa layarnya
+
+Dasbor HR. Yang pertama dilihat HR di pagi hari: kehadiran, persetujuan yang menunggu, dan pekerjaan yang macet.
+
+![Dasbor HR](01-dashboard.png)
+
+Review payroll. Payroll tidak bisa dikirim ke Finance selama anomali kritis belum dicek, dan rule pack yang berlaku tampil di samping angkanya.
+
+![Review payroll dengan pengecekan anomali](02-payroll-review.png)
+
+Slip gaji di HP. PIN atau sidik jari sebelum angka apa pun muncul, dan kasus-kasus pinggir dirancang dari awal, bukan ditemukan QA belakangan.
+
+![Slip gaji di HP](03-payslip-mobile.png)
+
+Absen untuk karyawan toko. Selfie plus geofence, tetap jalan saat offline, memblokir fake GPS.
+
+![Absen dari HP](04-clock-in-mobile.png)
+
+Rule pack. Aturan berversi dengan tanggal berlaku, uji coba di sandbox, dan persetujuan Head of HR.
+
+![Rule pack](05-rule-packs.png)
+
+Dan alur di balik story slip gaji. Setiap langkah terhubung ke acceptance criteria yang akan dicek QA.
+
+![Alur slip gaji](06-flow-payslip.png)
+
+*Screenshot memakai tampilan bahasa Inggris; aplikasinya default Bahasa Indonesia.*
+
 ## Keputusan yang perlu dijelaskan
 
 **Aturan disimpan sebagai data, bukan kode.** Tarif BPJS, tabel TER PPh 21, pengali lembur, dan batas PKWT bisa berubah. Saya minta semuanya disimpan sebagai "rule pack" berversi dengan tanggal berlaku. Payroll Februari tetap memakai aturan Februari walaupun diproses ulang di bulan Maret. Rule pack baru harus disetujui Head of HR dan bisa diuji dulu di sandbox.
