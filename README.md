@@ -2,7 +2,7 @@
 
 # HRIS Starnsparks: product case study
 
-I'm Ares Suhendar, a Product Owner based in Jakarta. This repo walks through how I scoped and ran the backlog for HRIS Starnsparks, an HR system for mid-size Indonesian companies with office staff, store crews and factory workers under one roof.
+Hi I'm Ares Suhendar, a Product Owner based in Jakarta. This repo walks through how I scoped and ran the backlog for HRIS Starnsparks, an HR system for mid-size Indonesian companies with office staff, store crews and factory workers under one roof.
 
 It's a working project, not a finished launch. I'm sharing the product side: the problem, the scope calls, the backlog, and the trade-offs I made along the way.
 
